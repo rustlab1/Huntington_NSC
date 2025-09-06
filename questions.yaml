@@ -1,0 +1,13 @@
+You have been given bulk RNA-seq data comparing HTT Mutant (HTT-Mut) to Control human samples (GSE270472). Using the provided raw FASTQ files and the described workflow (trimming and subsampling with fastp/reformat.sh, alignment with HISAT2, quantification with featureCounts, low count gene filtering, DESeq2 differential expression, and downstream GO enrichment), answer the following with the provided data and workflow: only use the data provided, do not hallucinate.
+
+questions:
+  - id: q1
+    question: "Quality Control: In sample GSM8343539 (SRR29493486), what is the percentage of Q30 bases for Read 1 before filtering after downsampling?"
+  - id: q2
+    question: "Gene Quantification: How many genes are detected in the GSM8343539 (SRR29493486) sample?"
+  - id: q3
+    question: "Differential Expression: How many genes are significantly differentially expressed (padj<0.05, |log2FC|>1.5) in HTT-KO vs Control?"
+  - id: q4
+    question: "Which gene has the most negative log2 fold change (i.e., is most downregulated) in HTT-KO vs Control?"
+  - id: q5
+    question: "GO Enrichment: Which Biological Process (BP) term is most significantly enriched among upregulated genes in HTT-Mut samples?"

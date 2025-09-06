@@ -1,0 +1,8 @@
+project_title: "Huntingtin loss-of-function contributes to transcriptional deregulation in Huntington’s disease"
+geo_accession: "GSE270472"
+publication: "Cell & Bioscience (2025)"
+doi: "10.1186/s13578-025-01443-5"
+organism: "Homo sapiens"
+groups:
+  - Control
+  - HT_Mutation
