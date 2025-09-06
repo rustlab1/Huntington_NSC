@@ -1,0 +1,15 @@
+Status	/Users/ruslanrust/Dropbox/SEPAL_AI/4_Huntington_NSC/aligned/SRR29493479.bam	/Users/ruslanrust/Dropbox/SEPAL_AI/4_Huntington_NSC/aligned/SRR29493480.bam	/Users/ruslanrust/Dropbox/SEPAL_AI/4_Huntington_NSC/aligned/SRR29493481.bam	/Users/ruslanrust/Dropbox/SEPAL_AI/4_Huntington_NSC/aligned/SRR29493486.bam	/Users/ruslanrust/Dropbox/SEPAL_AI/4_Huntington_NSC/aligned/SRR29493488.bam
+Assigned	1312776	1312951	1309996	1090911	1195972
+Unassigned_Unmapped	31074	32111	32747	37253	31000
+Unassigned_Read_Type	0	0	0	0	0
+Unassigned_Singleton	0	0	0	0	0
+Unassigned_MappingQuality	0	0	0	0	0
+Unassigned_Chimera	0	0	0	0	0
+Unassigned_FragmentLength	0	0	0	0	0
+Unassigned_Duplicate	0	0	0	0	0
+Unassigned_MultiMapping	435318	439792	490308	515327	531441
+Unassigned_Secondary	0	0	0	0	0
+Unassigned_NonSplit	0	0	0	0	0
+Unassigned_NoFeatures	697995	720455	704755	936600	813982
+Unassigned_Overlapping_Length	0	0	0	0	0
+Unassigned_Ambiguity	182372	170334	178789	162463	171577

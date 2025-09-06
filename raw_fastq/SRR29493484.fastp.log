@@ -1,0 +1,64 @@
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 90593518
+total bases: 9149945318
+Q20 bases: 9016413395(98.5406%)
+Q30 bases: 8754691984(95.6803%)
+Q40 bases: 0(0%)
+
+Read2 before filtering:
+total reads: 90593518
+total bases: 9149945318
+Q20 bases: 8956271209(97.8833%)
+Q30 bases: 8600534030(93.9955%)
+Q40 bases: 0(0%)
+
+Read1 after filtering:
+total reads: 89295345
+total bases: 8899025333
+Q20 bases: 8792462782(98.8025%)
+Q30 bases: 8549819034(96.0759%)
+Q40 bases: 0(0%)
+
+Read2 after filtering:
+total reads: 89295345
+total bases: 8898756280
+Q20 bases: 8755005872(98.3846%)
+Q30 bases: 8423391979(94.6581%)
+Q40 bases: 0(0%)
+
+Filtering result:
+reads passed filter: 178590690
+reads failed due to low quality: 2576258
+reads failed due to too many N: 5090
+reads failed due to too short: 14998
+reads with adapter trimmed: 15280727
+bases trimmed due to adapters: 242562607
+
+Duplication rate: 41.3528%
+
+Insert size peak (evaluated by paired-end reads): 145
+
+JSON report: fastp.json
+HTML report: fastp.html
+
+fastp -i fastq1/SRR29493484_1.fastq.gz -I fastq1/SRR29493484_2.fastq.gz -o fastq_downsampled/SRR29493484_1.trimmed.fastq.gz -O fastq_downsampled/SRR29493484_2.trimmed.fastq.gz -w 16 -q 20 -u 30 -n 5 -l 30 --detect_adapter_for_pe --compression 6 
+fastp v1.0.1, time used: 385 seconds
+java -ea -Xmx200m -cp /Users/rus/miniconda3/envs/rna_tools/opt/bbmap-38.18/current/ jgi.ReformatReads in1=fastq_downsampled/SRR29493484_1.trimmed.fastq.gz in2=fastq_downsampled/SRR29493484_2.trimmed.fastq.gz out1=fastq_downsampled/SRR29493484_1.subsampled.fastq.gz out2=fastq_downsampled/SRR29493484_2.subsampled.fastq.gz samplereadstarget=1187067 overwrite=t
+Executing jgi.ReformatReads [in1=fastq_downsampled/SRR29493484_1.trimmed.fastq.gz, in2=fastq_downsampled/SRR29493484_2.trimmed.fastq.gz, out1=fastq_downsampled/SRR29493484_1.subsampled.fastq.gz, out2=fastq_downsampled/SRR29493484_2.subsampled.fastq.gz, samplereadstarget=1187067, overwrite=t]
+
+Set INTERLEAVED to false
+Input is being processed as paired
+Input:                  	178590690 reads          	17797781613 bases
+Output:                 	2374134 reads (1.33%) 	236607327 bases (1.33%)
+
+Time:                         	134.738 seconds.
+Reads Processed:        178m 	1325.47k reads/sec
+Bases Processed:      17797m 	132.09m bases/sec
